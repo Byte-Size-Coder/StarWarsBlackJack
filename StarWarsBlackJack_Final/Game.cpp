@@ -642,6 +642,9 @@ int Game::GameStart()
 
 						if (Player::Input(event.button.x, event.button.y, Hit) && Hit->isVisible())
 						{
+							DoubleDown->setVisible(false);
+							Surrender->setVisible(false);
+
 							if (hitCard == 1)
 							{
 								_deck.getCard();
